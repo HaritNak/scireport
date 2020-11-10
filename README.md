@@ -1,4 +1,5 @@
 #ขั้นตอนการ Build Project
+```sh
 $ docker build -t scireport .
 $ docker network create mynetwork
 $ docker run -d --name myweb --network mynetwork --restart always -p 80:80 \
@@ -13,3 +14,4 @@ $ mysql -u root -ppassword
 $ use scireport
 $ quit
 $ docker exec -i mysql mysql -u root -ppassword scireport < scireport.sql
+```
